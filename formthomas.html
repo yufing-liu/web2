@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/xeoaqrzb" method="POST">
+        <!-- 個人資料 -->
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" placeholder="請輸入您的姓名" required />
+        
+        <label for="address">地址：</label>
+        <input type="text" id="address" name="address" placeholder="請輸入您的地址" required />
+    
+        <!-- 行程相關 -->
+        <h3>行程相關</h3>
+        
+        <label>可參加行程日期：(可複選)</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="date[]" value="midterm"> 期中考後</label>
+          <label><input type="checkbox" name="date[]" value="final"> 期末考後</label>
+          <label><input type="checkbox" name="date[]" value="summer"> 暑假期間</label>
+        </div>
+    
+        <label>喜歡的地點是：(單選)</label>
+        <div class="radio-group">
+          <label><input type="radio" name="location" value="lake"> 游湖</label>
+          <label><input type="radio" name="location" value="forest"> 綠島</label>
+          <label><input type="radio" name="location" value="mountain"> 阿里山</label>
+          <label><input type="radio" name="location" value="101"> 台北101</label>
+        </div>
+    
+        <label for="suggestions">其它需求或建議可以寫在此：</label>
+        <textarea id="suggestions" name="suggestions" placeholder="請輸入建議或需求..."></textarea>
+    
+        <label for="other">其它行程建議：</label>
+        <input type="text" id="other" name="other" placeholder="請輸入其它行程建議" />
+    
+        <!-- 送出按鈕 -->
+        <button type="submit">提交</button>
+      </form>
+    </div>
+</body>
+</html>
